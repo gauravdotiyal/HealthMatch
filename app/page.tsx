@@ -3,9 +3,13 @@ import PatientForm from "@/components/forms/PatientForm";
 import Link from "next/link";
 import Image from "next/image";
 
+
+
 export default function Home() {
   return (
     <div className="flex h-screen max-h-screen">
+      {/* OTP Verification or Passkey  */}
+
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[496px]">
           {/* logo */}
@@ -15,7 +19,9 @@ export default function Home() {
             <p className="justify-items-end text-dark-600 xl:text-left">
               © 2024 HealthMatch
             </p>
-           <Link href="/?admin=true" className="text-green-500"></Link>
+           <Link href="/?admin=true" className="text-green-500">
+           Admin
+           </Link>
           </div>
         </div>
       </section>
